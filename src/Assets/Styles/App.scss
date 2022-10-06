@@ -1,0 +1,21 @@
+//VARIABLES
+$red: hsl(0, 100%, 68%);
+$dkBlue: hsl(230, 29%, 20%);
+$dkGray: hsl(230, 11%, 40%);
+$mdGray: hsl(231, 7%, 65%);
+$ltGray: hsl(207, 33%, 95%);
+
+//Headings, Call-to-actions, Navigation -> Barlow Condensed
+//Body -> Barlow
+
+//SETUP 
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
