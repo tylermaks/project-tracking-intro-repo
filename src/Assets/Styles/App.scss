@@ -19,3 +19,62 @@ html, body{
     width: 100%;
 }
 
+//GLOBAL & FONTS
+h1, h2, span, a{ 
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+h1{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+h2{
+    color: $mdGray;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+p{
+    color: $mdGray;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+}
+
+//CONTAINERS
+.container{
+    margin: 0 auto;
+    min-width: 375px;
+    max-width: 600px;
+    width: 100%;
+}
+
+
+//APP
+.bg-block{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: $ltGray;
+    border-bottom-left-radius: 3rem;
+    height: 30rem;
+    width: 50%;
+    z-index: -1;
+}
+
+
+
+//DESKTOP VIEWS
+@media screen and (min-width: 62.5rem) {
+    .mobile{ 
+        display: none;
+    }
+
+    .container{
+        // margin: 0 0 0 10rem;
+        max-width: unset;
+    }
+}

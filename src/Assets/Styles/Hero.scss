@@ -1,0 +1,76 @@
+$dkBlue: hsl(230, 29%, 20%);
+$red: hsl(0, 100%, 68%);
+
+//NAVBAR
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.menu{
+    img{
+        cursor: pointer;
+    }
+}
+
+
+//HERO INNER
+.hero-inner{ 
+    margin-top: 5rem !important;
+    overflow: hidden;
+
+    *{
+        margin: 1rem 0;
+    }
+
+    a{
+        background-color: $red;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    article{
+        padding: 2rem;
+    }
+
+    h2{
+        display: inline;
+        margin-left: 1rem;
+    }
+
+    img{
+        width: 137.5%;
+    }
+
+    p{
+        margin-bottom: 2rem;
+    }
+
+    span{
+        background-color: $dkBlue;
+        border-radius: 1.5rem;
+        color: white;
+        padding: 0.15rem 0.75rem;
+        text-transform: uppercase;
+    }   
+}
+
+
+//DESKTOP VIEWS
+@media screen and (min-width:62.5rem) {
+    .hero-inner{
+        display: flex;
+        flex-direction: row-reverse;
+
+        div, article{ 
+            width: 50%;
+        }
+    }
+}
