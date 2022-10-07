@@ -20,12 +20,30 @@ html, body{
 }
 
 //GLOBAL & FONTS
+a{
+    color: $dkBlue;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu-link{
+
+    &:hover{
+        text-decoration: underline;
+    }
+
+    &--gray{
+        color: $mdGray;
+    }
+}
+
 h1, h2, span, a{ 
     font-family: "Barlow Condensed", sans-serif;
 }
 
 h1{
-    font-size: 2.25rem;
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
     text-transform: uppercase;
 }
 
@@ -43,6 +61,10 @@ p{
     font-size: 18px;
 }
 
+.desktop{
+    display: none;
+}
+
 //CONTAINERS
 .container{
     margin: 0 auto;
@@ -50,7 +72,6 @@ p{
     max-width: 600px;
     width: 100%;
 }
-
 
 //APP
 .bg-block{
@@ -60,12 +81,10 @@ p{
 
     background-color: $ltGray;
     border-bottom-left-radius: 3rem;
-    height: 30rem;
+    height: 25rem;
     width: 50%;
     z-index: -1;
 }
-
-
 
 //DESKTOP VIEWS
 @media screen and (min-width: 62.5rem) {
@@ -73,8 +92,12 @@ p{
         display: none;
     }
 
+    .desktop{
+        display: flex;
+    }
+
     .container{
         // margin: 0 0 0 10rem;
-        max-width: unset;
+        max-width: 1440px;
     }
 }

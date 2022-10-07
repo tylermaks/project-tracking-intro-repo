@@ -14,12 +14,16 @@ $red: hsl(0, 100%, 68%);
     img{
         cursor: pointer;
     }
-}
 
+    &--inner{
+        display:flex;
+        justify-content: space-between;
+    }
+}
 
 //HERO INNER
 .hero-inner{ 
-    margin-top: 5rem !important;
+    // margin-top: 5rem !important;
     overflow: hidden;
 
     *{
@@ -68,9 +72,22 @@ $red: hsl(0, 100%, 68%);
     .hero-inner{
         display: flex;
         flex-direction: row-reverse;
+        margin-top: 0 !important;
 
         div, article{ 
             width: 50%;
         }
+
+        article{ 
+            padding-left: 10rem;
+        }
+    }
+
+    .main-nav{
+        padding: 5rem 10rem;
+    }
+
+    .menu{
+        width: 45%;
     }
 }
