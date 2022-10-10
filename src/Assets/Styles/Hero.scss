@@ -1,29 +1,8 @@
 $dkBlue: hsl(230, 29%, 20%);
 $red: hsl(0, 100%, 68%);
 
-//NAVBAR
-.main-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    width: 100%;
-}
-
-.menu{
-    img{
-        cursor: pointer;
-    }
-
-    &--inner{
-        display:flex;
-        justify-content: space-between;
-    }
-}
-
 //HERO INNER
 .hero-inner{ 
-    // margin-top: 5rem !important;
     overflow: hidden;
 
     *{
@@ -81,13 +60,5 @@ $red: hsl(0, 100%, 68%);
         article{ 
             padding-left: 10rem;
         }
-    }
-
-    .main-nav{
-        padding: 5rem 10rem;
-    }
-
-    .menu{
-        width: 45%;
     }
 }

@@ -1,0 +1,32 @@
+//NAVBAR
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.menu{
+    img{
+        cursor: pointer;
+    }
+
+    &--inner{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+//DESKTOP VIEW
+@media screen and (min-width:62.5rem) {
+    .main-nav{
+        padding: 5rem 10rem;
+    }
+
+    .menu{
+        width: 45%;
+    }
+}

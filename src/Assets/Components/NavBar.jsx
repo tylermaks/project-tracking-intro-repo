@@ -3,6 +3,8 @@ import logo from "../Images/logo.svg"
 import hamburger from "../Images/icon-hamburger.svg"
 import close from "../Images/icon-close.svg"
 
+import "../Styles/NavBar.scss"
+
 
 function NavBar({mobileMenu, toggleMenu}){
 
